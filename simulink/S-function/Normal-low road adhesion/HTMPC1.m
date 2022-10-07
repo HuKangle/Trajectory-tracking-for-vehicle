@@ -44,7 +44,7 @@ ts  = [0.05 0];
     InitialGapflag = 0; % the first few inputs don't count. Gap it.
     
     global VehiclePara; % for SUV
-    VehiclePara.m   = 1460;   %mΪ��������,Kg; Sprung mass = 1370
+    VehiclePara.m   = 1460;   %m,Kg; Sprung mass = 1370
     VehiclePara.g   = 9.81;
     VehiclePara.hCG = 0.65;%m
     VehiclePara.Lf  = 1.05;  % 1.05
@@ -101,17 +101,10 @@ ts  = [0.05 0];
     Reftraj = load('PathPoints_DoubleLane_new.mat');    
     
     Vel = 60/3.6;
-%     VehiclePara.CarHat = -52000;
-%     VehiclePara.CafHat = -47000;
-
-%     VehiclePara.CarHat = -57000;
-%     VehiclePara.CafHat = -62000;
 
     VehiclePara.CarHat = -77000;
     VehiclePara.CafHat = -82000;
 
-%     VehiclePara.CarHat = -77000;
-%     VehiclePara.CafHat = -70000;
    [Sl, Ql, Rdun,Rdul, Wshl, dun, dul] = func_CostWeightingRegulation_QuadSlacks_Yalmip(MPCParameters, CostWeights, Constraints);
     CostWeights.Ql = Ql;    % Weights on states
     CostWeights.Sl = Sl;    % Weight  on fwa
