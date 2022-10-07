@@ -1,0 +1,3401 @@
+Model {
+  Name			  "Immersion_3"
+  Version		  9.1
+  SavedCharacterEncoding  "Big5"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.74"
+    NumModelReferences	    0
+    NumTestPointedSignals   4
+    TestPointedSignal {
+      SignalName	      "Steering Angle"
+      FullBlockPath	      "Immersion_3/Demux"
+      LogSignal		      1
+      MaxPoints		      5000
+      Decimation	      2
+    }
+    TestPointedSignal {
+      SignalName	      "posY"
+      FullBlockPath	      "Immersion_3/Demux1"
+      PortIndex		      3
+      LogSignal		      1
+      MaxPoints		      5000
+      Decimation	      2
+    }
+    TestPointedSignal {
+      SignalName	      "Ey"
+      FullBlockPath	      "Immersion_3/Demux1"
+      PortIndex		      8
+      LogSignal		      1
+      MaxPoints		      5000
+      Decimation	      2
+    }
+    TestPointedSignal {
+      SignalName	      "fwa_MPC"
+      FullBlockPath	      "Immersion_3/Demux1"
+      PortIndex		      15
+      LogSignal		      1
+      MaxPoints		      5000
+      Decimation	      2
+    }
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+    NumResetEvents	    0
+    HasInitializeEvent	    0
+    HasTerminateEvent	    0
+    IsExportFunctionModel   0
+    NumParameterArguments   0
+    NumExternalFileReferences 1
+    ExternalFileReference {
+      Reference		      "Solver_SF/CarSim S-Function"
+      Path		      "Immersion_3/CarSim S-Function"
+      SID		      "85"
+      Type		      "LIBRARY_BLOCK"
+    }
+    OrderedModelArguments   1
+  }
+  DiagnosticSuppressor	  "on"
+  SuppressorTable	  "22 serialization::archive 11 0 6 0 0 0 8 0"
+  Notes			  ""
+  NotesPlugin		  "on"
+  LogicAnalyzerGraphicalSettings ""
+  LogicAnalyzerPlugin	  "on"
+  LogicAnalyzerSignalOrdering ""
+  CustomCodeFunctionData  ""
+  SLCCPlugin		  "on"
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "$bdroot"
+      PropName		      "mdlProps"
+    }
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    2
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      3
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [-8.0, -8.0, 1696.0, 1026.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1642.0, 847.0]
+	ZoomFactor		[1.25]
+	Offset			[-861.34199097738542, 302.189315655979]
+      }
+      Object {
+	$PropName		"DockComponentsInfo"
+	$ObjectID		7
+	$ClassName		"Simulink.DockComponentInfo"
+	Type			"GLUE2:PropertyInspector"
+	ID			"Property Inspector"
+	Visible			[0]
+	CreateCallback		""
+	UserData		""
+	Floating		[0]
+	DockPosition		"Right"
+	Width			[640]
+	Height			[480]
+      }
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAABPsAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP////sAAABgAFMAaQBtAHUAb"
+      "ABpAG4AawA6AEUAZABpAHQAbwByADoAUgBlAGYAZQByAGUAbgBjAGUAZABGAGkAbABlAHMALwBSAGUAZgBlAHIAZQBuAGMAZQBkACAARgBpAGwAZ"
+      "QBzAAAAAAD/////AAAAAAAAAAAAAAABAAAAAAAAAAD8AgAAAAH7AAAAVABHAEwAVQBFADIAOgBQAHIAbwBwAGUAcgB0AHkASQBuAHMAcABlAGMAd"
+      "ABvAHIALwBQAHIAbwBwAGUAcgB0AHkAIABJAG4AcwBwAGUAYwB0AG8AcgAAAAAA/////wAAACwA////AAAGkAAAA4gAAAABAAAAAgAAAAEAAAAC/"
+      "AAAAAEAAAACAAAAD/////8AAAAAAP////8AAAAAAAAAAP////8BAAAAAP////8AAAAAAAAAAP////8AAAAAAP////8AAAAAAAAAAP////8AAAAAA"
+      "P////8AAAAAAAAAAP////8AAAAAAP////8AAAAAAAAAAP////8BAAAAef////8AAAAAAAAAAP////8BAAAA2v////8AAAAAAAAAAP////8AAAAAA"
+      "P////8AAAAAAAAAAP////8BAAABU/////8AAAAAAAAAAP////8AAAAAAP////8AAAAAAAAAAP////8AAAAAAP////8AAAAAAAAAAP////8AAAAAA"
+      "P////8AAAAAAAAAAP////8BAAADUv////8AAAAAAAAAAP////8BAAADgf////8AAAAAAAAAAP////8AAAAAAP////8AAAAAAAAAAA=="
+    }
+  }
+  HideAutomaticNames	  on
+  Created		  "Wed May 29 22:31:22 2013"
+  Creator		  "xuwei"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "CK12"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Fri Oct 07 10:30:45 2022"
+  RTWModifiedTimeStamp	  587039442
+  ModelVersionFormat	  "1.%<AutoIncrement:74>"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  PortDataTypeDisplayFormat "AliasTypeOnly"
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  on
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ShowSubsystemDomainSpec off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  BlockVariantConditionDataTip off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  MultiThreadCoSim	  on
+  SimulationMode	  "normal"
+  VisualizeLoggedSignalsWhenLoggingToFile off
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  EnablePacing		  off
+  PacingRate		  1
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    8
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "Immersion_3"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "Immersion_3"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  Object {
+    $PropName		    "InstrumentedSignals"
+    $ObjectID		    9
+    $ClassName		    "Simulink.HMI.InstrumentedSignals"
+    Array {
+      Type		      "Struct"
+      Dimension		      4
+      MATStruct {
+	UUID			"82367461-a81b-4820-9665-650ed5c2bb5b"
+	BlockPath_		"Demux1"
+	SID_			"141"
+	SubPath_		""
+	OutputPortIndex_	[8.0]
+	LogicalPortIndex_	[0.0]
+	SignalName_		"Ey"
+	SubSysPath_		""
+	Decimation_		[1.0]
+	MaxPoints_		[1024.0]
+	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+      }
+      MATStruct {
+	UUID			"9cc2653e-0ddf-4fef-9fa8-610de16f1efa"
+	BlockPath_		"Demux"
+	SID_			"135"
+	SubPath_		""
+	OutputPortIndex_	[1.0]
+	LogicalPortIndex_	[0.0]
+	SignalName_		"Steering Angle"
+	SubSysPath_		""
+	Decimation_		[1.0]
+	MaxPoints_		[1024.0]
+	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+      }
+      MATStruct {
+	UUID			"0a7e75ee-baa2-45e2-9e31-f16fb21049ee"
+	BlockPath_		"Demux1"
+	SID_			"141"
+	SubPath_		""
+	OutputPortIndex_	[15.0]
+	LogicalPortIndex_	[0.0]
+	SignalName_		"fwa_sol"
+	SubSysPath_		""
+	Decimation_		[1.0]
+	MaxPoints_		[1024.0]
+	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+      }
+      MATStruct {
+	UUID			"711f1434-8aca-4c75-9e37-579d6a172c0d"
+	BlockPath_		"Demux1"
+	SID_			"141"
+	SubPath_		""
+	OutputPortIndex_	[3.0]
+	LogicalPortIndex_	[0.0]
+	SignalName_		"posY"
+	SubSysPath_		""
+	Decimation_		[1.0]
+	MaxPoints_		[1024.0]
+	TargetBufferedStreaming_ [0.0]
+	IsFrameBased_		[0.0]
+	DomainType_		""
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	  }
+	  PropName		  "DomainParams_"
+	}
+      }
+      PropName		      "Persistence"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  OrderedModelArguments	  on
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      10
+      Version		      "1.18.0"
+      DisabledProps	      []
+      Description	      ""
+      Array {
+	Type			"Handle"
+	Dimension		11
+	Simulink.SolverCC {
+	  $ObjectID		  11
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  StartTime		  "0.0"
+	  StopTime		  "6"
+	  AbsTol		  "auto"
+	  AutoScaleAbsTol	  "on"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  EnableMultiTasking	  on
+	  ConcurrentTasks	  off
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	  SampleTimeProperty	  []
+	  DecoupledContinuousIntegration off
+	  MinimalZcImpactIntegration off
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  12
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "Dataset"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  DatasetSignalFormat	  "timeseries"
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  13
+	  Version		  "1.18.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "EfficientTunableParamExpr"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  AdvancedOptControl	  ""
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	  OptimizeBlockOrder	  "off"
+	  OptimizeDataStoreBuffers on
+	  BusAssignmentInplaceUpdate on
+	  DifferentSizesBufferReuse off
+	  OptimizationLevel	  "level2"
+	  OptimizationPriority	  "Balanced"
+	  OptimizationCustomize	  on
+	  UseRowMajorAlgorithm	  off
+	  LabelGuidedReuse	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  14
+	  Version		  "1.18.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    "UseOnlyExistingSharedCode"
+	    PropName		    "DisabledProps"
+	  }
+	  Description		  ""
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  StringTruncationChecking "error"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  ExportedTasksRateTransMsg "none"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "warning"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  UseOnlyExistingSharedCode "error"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  RowMajorDimensionSupport off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  ChecksumConsistencyForSSReuse	"none"
+	  LibraryContextMissingDiagnostic "none"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  SymbolicDimsDataTypeCodeGenerationDiagnostic "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnreachableExecutionPathDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  SFTemporalDelaySmallerThanSampleTimeDiag "warning"
+	  SFSelfTransitionDiag	  "warning"
+	  SFExecutionAtInitializationDiag "none"
+	  SFMachineParentedDataDiag "warning"
+	  IntegerSaturationMsg	  "warning"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	  RCSCRenamedMsg	  "warning"
+	  RCSCObservableMsg	  "warning"
+	  ForceCombineOutputUpdateInSim	off
+	  UnitDatabase		  ""
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  15
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdBitPerSizeT	  32
+	  ProdBitPerPtrDiffT	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetBitPerSizeT	  32
+	  TargetBitPerPtrDiffT	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  16
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelDependencies	  ""
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  17
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  SimCustomSourceCode	  ""
+	  SimCustomHeaderCode	  ""
+	  SimCustomInitializer	  ""
+	  SimCustomTerminator	  ""
+	  SimReservedNameArray	  []
+	  SimUserSources	  ""
+	  SimUserIncludeDirs	  ""
+	  SimUserLibraries	  ""
+	  SimUserDefines	  ""
+	  SimCustomCompilerFlags  ""
+	  SimCustomLinkerFlags	  ""
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	  ModelFunctionsGlobalVisibility "on"
+	  CompileTimeRecursionLimit 50
+	  EnableRuntimeRecursion  on
+	  MATLABDynamicMemAlloc	  on
+	  MATLABDynamicMemAllocThreshold 65536
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  18
+	  Version		  "1.18.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  PackageName		  ""
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  RTWBuildHooks		  []
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomDefine		  ""
+	  CustomLAPACKCallback	  ""
+	  CustomFFTCallback	  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  CustomToolchainOptions  []
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  ObjectivePriorities	  []
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      19
+	      Version		      "1.18.0"
+	      Array {
+		Type			"Cell"
+		Dimension		28
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		Cell			"BlockCommentType"
+		Cell			"InsertPolySpaceComments"
+		Cell			"MATLABFcnDesc"
+		Cell			"InternalIdentifier"
+		Cell			"CustomSymbolStrModelFcn"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"CustomSymbolStrEmxType"
+		Cell			"CustomSymbolStrEmxFcn"
+		Cell			"CustomUserTokenString"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      Comment		      ""
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      MangleLength	      1
+	      SharedChecksumLength    8
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrModelFcn "$R$N"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      CustomSymbolStrEmxType  "emxArray_$M$N"
+	      CustomSymbolStrEmxFcn   "emx$M$N"
+	      CustomUserTokenString   ""
+	      CustomCommentsFcn	      ""
+	      DefineNamingRule	      "None"
+	      DefineNamingFcn	      ""
+	      ParamNamingRule	      "None"
+	      ParamNamingFcn	      ""
+	      SignalNamingRule	      "None"
+	      SignalNamingFcn	      ""
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      BlockCommentType	      "BlockPathComment"
+	      StateflowObjectComments on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifierFile  ""
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	      ReservedNameArray	      []
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      20
+	      Version		      "1.18.0"
+	      Array {
+		Type			"Cell"
+		Dimension		18
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PurelyIntegerCode"
+		Cell			"PortableWordSizes"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"GenerateAllocFcn"
+		Cell			"ExistingSharedCode"
+		Cell			"RemoveDisableFunc"
+		Cell			"RemoveResetFunc"
+		PropName		"DisabledProps"
+	      }
+	      Description	      ""
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      MultiwordTypeDef	      "System defined"
+	      MultiwordLength	      2048
+	      DynamicStringBufferSize 256
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      ExistingSharedCode      ""
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Use local settings"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      RemoveDisableFunc	      off
+	      RemoveResetFunc	      off
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      MDXCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      CoderGroups	      []
+	      AccessMethods	      []
+	      LookupTableObjectStructAxisOrder "1,2,3,4,..."
+	      LUTObjectStructOrderExplicitValues "Size,Breakpoints,Table"
+	      LUTObjectStructOrderEvenSpacing "Size,Breakpoints,Table"
+	      ArrayLayout	      "Column-major"
+	      ERTHeaderFileRootName   "$R$E"
+	      ERTSourceFileRootName   "$R$E"
+	      ERTDataFileRootName     "$R_data"
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeMexArgs	      ""
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  21
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovCompData		  ""
+	  CovMetricSettings	  "dw"
+	  CovFilter		  ""
+	  CovHTMLOptions	  ""
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  off
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovShowResultsExplorer  on
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "off"
+	  CovModelRefExcluded	  ""
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  on
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	  CovMcdcMode		  "Masking"
+	}
+	hdlcoderui.hdlcc {
+	  $ObjectID		  22
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  "HDL Coder custom configuration component"
+	  Name			  "HDL Coder"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    1
+	    Cell		    " "
+	    PropName		    "HDLConfigFile"
+	  }
+	  HDLCActiveTab		  "0"
+	}
+	SSC.SimscapeCC {
+	  $ObjectID		  23
+	  Version		  "1.18.0"
+	  DisabledProps		  []
+	  Description		  ""
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    MECH.SimMechanicsCC {
+	      $ObjectID		      24
+	      Version		      "1.18.0"
+	      DisabledProps	      []
+	      Description	      ""
+	      Name		      "SimscapeMultibody1G"
+	      WarnOnRedundantConstraints on
+	      WarnOnSingularInitialAssembly off
+	      ShowCutJoints	      off
+	      VisOnUpdateDiagram      off
+	      VisDuringSimulation     off
+	      EnableVisSimulationTime on
+	      VisSampleTime	      "0"
+	      DisableBodyVisControl   off
+	      ShowCG		      on
+	      ShowCS		      on
+	      ShowOnlyPortCS	      off
+	      HighlightModel	      on
+	      FramesToBeSkipped	      "0"
+	      AnimationDelay	      "3"
+	      RecordAVI		      off
+	      CompressAVI	      on
+	      AviFileName	      ""
+	      AutoFitVis	      "off"
+	      EnableSelection	      on
+	      LastVizWinPosition      "[-1 -1 -1 -1]"
+	      CamPosition	      "[0 0 0]"
+	      CamTarget		      "[0 0 -1]"
+	      CamUpVector	      "[0 1 0]"
+	      CamHeight		      "-1"
+	      CamViewAngle	      "0"
+	      VisBackgroundColor      "[0.9 0.9 0.95]"
+	      DefaultBodyColor	      "[1 0 0]"
+	      MDLBodyVisualizationType "Convex hull from body CS locations"
+	      OVRRIDBodyVisualizationType "NONE"
+	      VisConfigFile	      ""
+	    }
+	    simmechanics.ConfigurationSet {
+	      $ObjectID		      25
+	      Version		      "1.18.0"
+	      DisabledProps	      []
+	      Description	      "Simscape Multibody"
+	      Array {
+		Type			"Handle"
+		Dimension		2
+		simmechanics.DiagnosticsConfigSet {
+		  $ObjectID		  26
+		  Version		  "1.18.0"
+		  DisabledProps		  []
+		  Description		  "Diagnostics"
+		  Name			  "DiagnosticsConfigSet"
+		  SimMechanicsInvalidVisualProperty "warning"
+		  SimMechanicsCrossSectionNullEdge "warning"
+		  SimMechanicsUnconnectedFramePorts "warning"
+		  SimMechanicsUnconnectedGeometryPorts "warning"
+		  SimMechanicsRedundantBlock "warning"
+		  SimMechanicsConflictingReferenceFrames "warning"
+		  SimMechanicsRigidlyBoundBlock	"error"
+		  SimMechanicsUnsatisfiedHighPriorityTargets "warning"
+		  SimMechanicsJointTargetOverSpecification "error"
+		}
+		simmechanics.ExplorerConfigSet {
+		  $ObjectID		  27
+		  Version		  "1.18.0"
+		  DisabledProps		  []
+		  Description		  "Explorer"
+		  Name			  "ExplorerConfigSet"
+		  SimMechanicsOpenEditorOnUpdate on
+		  InternalSimMechanicsExplorerSettings ""
+		}
+		PropName		"Components"
+	      }
+	      Name		      "SimscapeMultibody"
+	    }
+	    PropName		    "Components"
+	  }
+	  Name			  "Simscape"
+	  EditingMode		  "Full"
+	  ExplicitSolverDiagnosticOptions "warning"
+	  GlobalZcOffDiagnosticOptions "warning"
+	  SimscapeNormalizeSystem on
+	  SimscapeNominalValues	  "[{\"value\":\"1\",\"unit\":\"A\"},{\"value\":\"1\",\"unit\":\"bar\"},{\"value\":\"1\",\"un"
+	  "it\":\"cm^2\"},{\"value\":\"1\",\"unit\":\"cm^3/s\"},{\"value\":\"1\",\"unit\":\"kJ/kg\"},{\"value\":\"1\",\"unit\""
+	  ":\"kW\"},{\"value\":\"1\",\"unit\":\"l\"},{\"value\":\"1\",\"unit\":\"N\"},{\"value\":\"1\",\"unit\":\"N*m\"},{\"va"
+	  "lue\":\"1\",\"unit\":\"V\"}]"
+	  SimscapeLogType	  "none"
+	  SimscapeLogSimulationStatistics off
+	  SimscapeLogToSDI	  off
+	  SimscapeLogOpenViewer	  off
+	  SimscapeLogName	  "simlog"
+	  SimscapeLogDecimation	  1
+	  SimscapeLogLimitData	  on
+	  SimscapeLogDataHistory  5000
+	  SimscapeUseOperatingPoints off
+	  SimscapeOperatingPoint  ""
+	  SelectedTab		  ""
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      ""
+      CurrentDlgPage	      "Solver"
+      ConfigPrmDlgPosition    [ 71, 71, 951, 699 ]
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    10
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    28
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  WSMdlFileData		  "DataTag0"
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    HideAutomaticName	    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    MarkupType		    "model"
+    UseDisplayTextAsClickCallback off
+    AnnotationType	    "note_annotation"
+    FixedHeight		    off
+    FixedWidth		    off
+    Interpreter		    "off"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "analyze"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      From
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Goto
+      GotoTag		      "A"
+      IconDisplay	      "Tag"
+      TagVisibility	      "local"
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      WrapState		      off
+      WrappedStateUpperValue  "pi"
+      WrappedStateLowerValue  "-pi"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      MultiThreadCoSim	      "auto"
+    }
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SaveFormat	      "Array"
+      Save2DSignal	      "Inherit from input (this choice will be removed - see release notes)"
+      FixptAsFi		      off
+      NumInputs		      "1"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      UniformRandomNumber
+      Minimum		      "-1"
+      Maximum		      "1"
+      Seed		      "0"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+    }
+  }
+  System {
+    Name		    "Immersion_3"
+    Location		    [-8, -8, 1688, 1018]
+    Open		    on
+    PortBlocksUseCompactNotation off
+    SetDomainSpec	    off
+    DomainSpecType	    "Deduce"
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "125"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "752"
+    Block {
+      BlockType		      Sum
+      Name		      "Add"
+      SID		      "725"
+      Ports		      [6, 1]
+      Position		      [660, 218, 710, 547]
+      ZOrder		      260
+      Inputs		      "++++++"
+      InputSameDT	      off
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Alpha_MPC"
+      SID		      "221"
+      Ports		      [2]
+      Position		      [-1050, 1021, -1020, 1054]
+      ZOrder		      209
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData3'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.14723','MaxYLimReal','0.14609','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.14723','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",2,'LineNames',{{'Alpf','Alpr'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimRea"
+      "l','-0.14723','MaxYLimReal','0.14609','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.14723','LegendVisib"
+      "ility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.68627450980392"
+      "2 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 "
+      "0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.83137254901960"
+      "8 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tool"
+      "s','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurement"
+      "s',true,'Version','2018a')),'Version','2018a','Position',[1082 66 540 359],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "B_Y_MPC"
+      SID		      "724"
+      Ports		      [2]
+      Position		      [295, 644, 340, 691]
+      ZOrder		      254
+      Commented		      "on"
+      LibraryVersion	      "1.441"
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      xmin		      "-0.1"
+      xmax		      "0.1"
+      ymin		      "-0.9"
+      ymax		      "0.9"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "CafHat_MPC"
+      SID		      "218"
+      Ports		      [2]
+      Position		      [-1050, 861, -1020, 894]
+      ZOrder		      206
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-105244.63965','MaxYLimReal','11693.84885','YLabelReal','','M"
+      "inYLimMag','    0.00000','MaxYLimMag','105244.63965','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMag"
+      "Phase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorO"
+      "rder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921"
+      "56862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 "
+      "0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNam"
+      "es',{{}},'NumLines',1,'LineNames',{{'CafHar'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-98646.33"
+      "054','MaxYLimReal','10960.70339','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XG"
+      "rid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68627450980"
+      "3922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.41176470"
+      "5882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921"
+      "569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCac"
+      "he',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Carhat'}},'ShowContent',true,'Placement',2)}"
+      ",'DisplayPropertyDefaults',struct('YLabelReal','','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPha"
+      "se',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrde"
+      "r',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.7176470"
+      "58823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0"
+      "745098039215686 0.650980392156863]),'DisplayLayoutDimensions',[2 1]),extmgr.Configuration('Tools','Plot Navigati"
+      "on',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version'"
+      ",'2018a')),'Version','2018a','Position',[182 531 644 319],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "CarSim S-Function"
+      SID		      "85"
+      Ports		      [1, 1]
+      Position		      [-390, 416, -315, 464]
+      ZOrder		      1
+      Priority		      "1"
+      LibraryVersion	      "1.46"
+      FontName		      "Arial"
+      FontSize		      12
+      SourceBlock	      "Solver_SF/CarSim S-Function"
+      SourceType	      "Vehicle math model library"
+      SourceProductName	      "CarSim S-Function"
+      MultiThreadCoSim	      "auto"
+      SIMFILE		      "simfile.sim"
+      Run_RTs		      off
+      vs_state_ind	      "Run"
+      StopMode_ind	      "Vehicle Model"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Curvature To EPSI_dot"
+      SID		      "216"
+      Ports		      [1]
+      Position		      [-880, 764, -850, 796]
+      ZOrder		      204
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData2'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.37889','MaxYLimReal','0.3823','YLabelReal','','MinYLimMag'"
+      ",'0.00000','MaxYLimMag','0.3823','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCol"
+      "or',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666"
+      "66666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725"
+      "49019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0."
+      "650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'),"
+      "struct('Visible','on'),struct('Visible','on'),struct('Visible','on'),struct('Visible','on'),struct('Visible','on"
+      "'),struct('Visible','on'),struct('Visible','on'),struct('Visible','on'),struct('Visible','on'),struct('Visible',"
+      "'on'),struct('Visible','on'),struct('Visible','on'),struct('Visible','on')}},'UserDefinedChannelNames',{{}},'Num"
+      "Lines',5,'LineNames',{{'Demux/7:1','Demux/7:2','Demux/7:3','Demux/7:4','Demux/7:5'}},'ShowContent',true,'Placeme"
+      "nt',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.37889','MaxYLimReal','0.3823','YLabelReal','','MinYLi"
+      "mMag','0.00000','MaxYLimMag','0.3823','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Ax"
+      "esColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098"
+      "039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.27"
+      "4509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.07450980392156"
+      "86 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscal"
+      "e','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Version','2018a','Position',[893 "
+      "147 474 411],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Curvature To Ey_dot"
+      SID		      "215"
+      Ports		      [1]
+      Position		      [-880, 684, -850, 716]
+      ZOrder		      203
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.33448','MaxYLimReal','0.34374','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.34374','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'"
+      "),struct('Visible','on'),struct('Visible','on'),struct('Visible','on'),struct('Visible','off'),struct('Visible',"
+      "'off'),struct('Visible','off'),struct('Visible','off'),struct('Visible','off'),struct('Visible','off'),struct('V"
+      "isible','off'),struct('Visible','off'),struct('Visible','off'),struct('Visible','off')}},'UserDefinedChannelName"
+      "s',{{}},'NumLines',5,'LineNames',{{'Demux/6:1','Demux/6:2','Demux/6:3','Demux/6:4','Demux/6:5'}},'ShowContent',t"
+      "rue,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.33448','MaxYLimReal','0.34374','YLabelRea"
+      "l','','MinYLimMag','0.00000','MaxYLimMag','0.34374','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPh"
+      "ase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrd"
+      "er',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647"
+      "058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0."
+      "0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'Pr"
+      "eviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018a','Measurements',struct("
+      "'traceselector',struct('Line',1),'signalstats',[]))),'Version','2018a','Position',[735 157 799 650],'VisibleAtMo"
+      "delOpen','on')"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux"
+      SID		      "135"
+      Ports		      [1, 8]
+      Position		      [-670, 263, -645, 897]
+      ZOrder		      30
+      BlockMirror	      on
+      ShowName		      off
+      Outputs		      "[1 16 4 5 1 5 5 6]"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"Steering Angle"
+      }
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux1"
+      SID		      "141"
+      Ports		      [1, 16]
+      Position		      [-265, 351, -250, 884]
+      ZOrder		      48
+      ShowName		      off
+      Outputs		      "16"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"Computation time"
+      }
+      Port {
+	PortNumber		2
+	Name			"posX"
+      }
+      Port {
+	PortNumber		3
+	Name			"posY"
+      }
+      Port {
+	PortNumber		4
+	Name			"POS_PSI"
+      }
+      Port {
+	PortNumber		5
+	Name			"Refer_Yr"
+      }
+      Port {
+	PortNumber		6
+	Name			"PSI_Road"
+      }
+      Port {
+	PortNumber		7
+	Name			"Epsi"
+      }
+      Port {
+	PortNumber		8
+	Name			"Ey"
+      }
+      Port {
+	PortNumber		9
+	Name			"Y_ZMP"
+      }
+      Port {
+	PortNumber		10
+	Name			"LTR_T"
+      }
+      Port {
+	PortNumber		11
+	Name			"LTR"
+      }
+      Port {
+	PortNumber		12
+	Name			"vy"
+      }
+      Port {
+	PortNumber		13
+	Name			"BETA"
+      }
+      Port {
+	PortNumber		14
+	Name			"yawrate"
+      }
+      Port {
+	PortNumber		15
+	Name			"fwa_MPC"
+      }
+      Port {
+	PortNumber		16
+	Name			"fwa_MPC"
+      }
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux2"
+      SID		      "186"
+      Ports		      [1, 4]
+      Position		      [-820, 441, -815, 479]
+      ZOrder		      88
+      BlockMirror	      on
+      ShowName		      off
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux4"
+      SID		      "208"
+      Ports		      [1, 5]
+      Position		      [-825, 532, -815, 628]
+      ZOrder		      196
+      BlockMirror	      on
+      ShowName		      off
+      Outputs		      "5"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux7"
+      SID		      "217"
+      Ports		      [1, 6]
+      Position		      [-805, 820, -785, 1070]
+      ZOrder		      205
+      BlockMirror	      on
+      ShowName		      off
+      Outputs		      "6"
+      DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Name			"CafHar"
+      }
+      Port {
+	PortNumber		2
+	Name			"Carhat"
+      }
+      Port {
+	PortNumber		3
+	Name			"Fyf"
+      }
+      Port {
+	PortNumber		4
+	Name			"Fyr"
+      }
+      Port {
+	PortNumber		5
+	Name			"Alpf"
+      }
+      Port {
+	PortNumber		6
+	Name			"Alpr"
+      }
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Epsi_MPC"
+      SID		      "205"
+      Ports		      [1]
+      Position		      [-25, 534, 5, 566]
+      ZOrder		      183
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData10'),extmgr.Configuration('Visuals','Time Domai"
+      "n',true,'SerializedDisplays',{struct('MinYLimReal','-0.09108','MaxYLimReal','0.10858','YLabelReal','','MinYLimMa"
+      "g','0.00000','MaxYLimMag','0.10858','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Axes"
+      "Color',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666"
+      "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
+      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686"
+      " 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines"
+      "',1,'LineNames',{{'Epsi'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0"
+      ".09108','MaxYLimReal','0.10858','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.10858','LegendVisibility'"
+      ",'On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.68"
+      "6274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.1607"
+      "8431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.07"
+      "45098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Pl"
+      "ot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',tru"
+      "e,'Version','2018a')),'Version','2018a','Position',[942 340 702 202])"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Error-MPC"
+      SID		      "185"
+      Ports		      [4]
+      Position		      [-1050, 439, -1010, 481]
+      ZOrder		      87
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.3271','MaxYLimReal','0.34665','YLabelReal','','MinYLimMag'"
+      ",'0.00000','MaxYLimMag','0.34665','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesCo"
+      "lor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666"
+      "666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372"
+      "549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0"
+      ".650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 0.0666666666666667],'Line"
+      "Style','-','LineWidth',0.75,'Marker','none','Visible','on'),struct('Color',[0.0745098039215686 0.623529411764706"
+      " 1],'LineStyle','-','LineWidth',0.75,'Marker','d','Visible','on'),[],[],struct('Color',[0.717647058823529 0.2745"
+      "09803921569 1],'LineStyle','-','LineWidth',0.75,'Marker','s','Visible','on'),[],[],[],[],struct('Color',[1 0.411"
+      "764705882353 0.16078431372549],'LineStyle','-','LineWidth',0.75,'Marker','+','Visible','on')}},'UserDefinedChann"
+      "elNames',{{}},'NumLines',1,'LineNames',{{'Demux2/1'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-1"
+      ".38211','MaxYLimReal','1.5992','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.29675','LegendVisibility',"
+      "'On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686"
+      "274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0."
+      "411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.2745"
+      "09803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePrope"
+      "rtiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'Demux2/2'}},'ShowContent',true,'Plac"
+      "ement',2),struct('MinYLimReal','-0.1301','MaxYLimReal','0.19038','YLabelReal','','MinYLimMag','0.00000','MaxYLim"
+      "Mag','0.29675','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesT"
+      "ickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098"
+      "039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098"
+      "039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'"
+      "Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'De"
+      "mux2/3'}},'ShowContent',true,'Placement',3),struct('MinYLimReal','-0.79068','MaxYLimReal','0.65782','YLabelReal'"
+      ",'','MinYLimMag','0.00000','MaxYLimMag','0.29675','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhas"
+      "e',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder"
+      "',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.39215686"
+      "2745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.07"
+      "45098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',"
+      "{{}},'NumLines',1,'LineNames',{{'Demux2/4'}},'ShowContent',true,'Placement',4)},'DisplayPropertyDefaults',struct"
+      "('YLabelReal','','AxesColor',[0 0 0],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0."
+      "16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 "
+      "0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863]),'DisplayLayoutDimensions',[4 "
+      "1],'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAut"
+      "oscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018a','Measurements',struct('tracesel"
+      "ector',struct('Line',1),'signalstats',[]))),'Version','2018a','Position',[804 82 615 559],'VisibleAtModelOpen','"
+      "on')"
+      NumInputPorts	      "4"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Ey_I&I"
+      SID		      "194"
+      Ports		      [1]
+      Position		      [-55, 615, -10, 665]
+      ZOrder		      187
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.47904','MaxYLimReal','1.07199','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','1.07199','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.4790"
+      "4','MaxYLimReal','1.07199','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','1.07199','LegendVisibility','On'"
+      ",'XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862745"
+      "09803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.4117"
+      "64705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27450980"
+      "3921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>')),extmgr.Confi"
+      "guration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools"
+      "','Measurements',true,'Version','2018a','Measurements',struct('signalstats',[]))),'Version','2018a','Position',["
+      "879 90 769 238],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      From
+      Name		      "From"
+      SID		      "726"
+      Position		      [370, 211, 410, 239]
+      ZOrder		      255
+      GotoTag		      "Ey"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From1"
+      SID		      "727"
+      Position		      [445, 396, 485, 424]
+      ZOrder		      261
+      GotoTag		      "Beta"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From2"
+      SID		      "728"
+      Position		      [445, 456, 495, 484]
+      ZOrder		      263
+      GotoTag		      "Yawrate"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From3"
+      SID		      "729"
+      Position		      [445, 516, 495, 544]
+      ZOrder		      265
+      GotoTag		      "rho"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From4"
+      SID		      "730"
+      Position		      [735, 421, 775, 449]
+      ZOrder		      268
+      GotoTag		      "fwa"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From5"
+      SID		      "731"
+      Position		      [370, 161, 410, 189]
+      ZOrder		      269
+      GotoTag		      "D_Ey"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From6"
+      SID		      "747"
+      Position		      [-615, 346, -575, 374]
+      ZOrder		      277
+      GotoTag		      "fwa_II"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Fy"
+      SID		      "220"
+      Ports		      [2]
+      Position		      [-1050, 916, -1020, 949]
+      ZOrder		      208
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData2'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-7358.675','MaxYLimReal','6282.075','YLabelReal','','MinYLimM"
+      "ag','  0.00000','MaxYLimMag','7358.675','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'"
+      "AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
+      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0."
+      "831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921"
+      "5686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumL"
+      "ines',2,'LineNames',{{'Fyf','Fyr'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLim"
+      "Real','-7358.675','MaxYLimReal','6282.075','YLabelReal','','MinYLimMag','  0.00000','MaxYLimMag','7358.675','Leg"
+      "endVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274"
+      "509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.41176470"
+      "5882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372"
+      "549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configurati"
+      "on('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Mea"
+      "surements',true,'Version','2018a')),'Version','2018a','Position',[134 177 935 587],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain"
+      SID		      "732"
+      Position		      [465, 275, 505, 305]
+      ZOrder		      256
+      Gain		      "-m*(K*lam_1+lam_2)/(mu*CafHat)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain1"
+      SID		      "733"
+      Position		      [465, 230, 505, 260]
+      ZOrder		      257
+      Gain		      "-m*(K+lam_1)/(mu*CafHat)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain2"
+      SID		      "734"
+      Position		      [475, 320, 525, 350]
+      ZOrder		      259
+      Gain		      "-m*(K*lam_2)/(mu*CafHat)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain3"
+      SID		      "735"
+      Position		      [530, 395, 560, 425]
+      ZOrder		      262
+      Gain		      "(CafHat+CarHat)/CafHat"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain4"
+      SID		      "736"
+      Position		      [540, 455, 570, 485]
+      ZOrder		      264
+      Gain		      "(Lf*CafHat-Lr*CarHat)/(CafHat*Vel)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain5"
+      SID		      "737"
+      Position		      [540, 515, 570, 545]
+      ZOrder		      266
+      Gain		      "m*Vel*Vel/(mu*CafHat)"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Gain6"
+      SID		      "748"
+      Position		      [-545, 340, -485, 380]
+      ZOrder		      278
+      Gain		      "19*180/pi"
+      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto"
+      SID		      "741"
+      Position		      [180, 550, 220, 580]
+      ZOrder		      271
+      GotoTag		      "Ey"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto1"
+      SID		      "742"
+      Position		      [-840, 355, -800, 385]
+      ZOrder		      272
+      GotoTag		      "D_Ey"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto2"
+      SID		      "743"
+      Position		      [150, 845, 190, 875]
+      ZOrder		      273
+      GotoTag		      "Beta"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto3"
+      SID		      "744"
+      Position		      [155, 905, 255, 945]
+      ZOrder		      274
+      GotoTag		      "Yawrate"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto4"
+      SID		      "745"
+      Position		      [-170, 875, -130, 905]
+      ZOrder		      275
+      GotoTag		      "fwa"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto5"
+      SID		      "746"
+      Position		      [-885, 490, -845, 520]
+      ZOrder		      276
+      GotoTag		      "rho"
+    }
+    Block {
+      BlockType		      Goto
+      Name		      "Goto6"
+      SID		      "738"
+      Position		      [765, 255, 805, 285]
+      ZOrder		      270
+      GotoTag		      "fwa_II"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator"
+      SID		      "739"
+      Ports		      [1, 1]
+      Position		      [410, 320, 440, 350]
+      ZOrder		      258
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "MPC_DLC_cost"
+      SID		      "203"
+      Ports		      [1]
+      Position		      [-50, 688, -15, 722]
+      ZOrder		      185
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData9'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-25.19064','MaxYLimReal','226.71572','YLabelReal','','MinYLim"
+      "Mag','0.00000','MaxYLimMag','226.71572','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'"
+      "AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0"
+      "666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0."
+      "831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803921"
+      "5686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 0.0666666666666667]"
+      ",'LineStyle','-','LineWidth',0.5,'Marker','.','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines',1,'Lin"
+      "eNames',{{'Y_ZMP'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-25.19064"
+      "','MaxYLimReal','226.71572','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','226.71572','LegendVisibility','"
+      "On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862"
+      "74509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.4"
+      "11764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27450"
+      "9803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>')),extmgr.Co"
+      "nfiguration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('To"
+      "ols','Measurements',true,'Version','2018a')),'Version','2018a','Position',[806 11 535 294])"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux"
+      SID		      "751"
+      Ports		      [9, 1]
+      Position		      [-425, 365, -415, 515]
+      ZOrder		      281
+      ShowName		      off
+      Inputs		      "9"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "PSI_devation_MPC"
+      SID		      "197"
+      Ports		      [2]
+      Position		      [-50, 451, -20, 484]
+      ZOrder		      189
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData4'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.32767','MaxYLimReal','0.32742','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.32767','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",2,'LineNames',{{'POS_PSI','PSI_Road'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('Min"
+      "YLimReal','-0.32767','MaxYLimReal','0.32742','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.32767','Lege"
+      "ndVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.6862745"
+      "09803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705"
+      "882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.8313725"
+      "49019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuratio"
+      "n('Tools','Plot Navigation',true,'PreviousAutoscale','XY','OnceAtStop',false),extmgr.Configuration('Tools','Meas"
+      "urements',true,'Version','2018a')),'Version','2018a','Position',[12 -196 1366 650])"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Pos_X_Y_MPC"
+      SID		      "196"
+      Ports		      [2]
+      Position		      [-50, 401, -20, 434]
+      ZOrder		      182
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData3'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-14.27','MaxYLimReal','128.43','YLabelReal','','MinYLimMag','"
+      "0.00000','MaxYLimMag','128.43','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColo"
+      "r',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666666"
+      "6666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137254"
+      "9019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.6"
+      "50980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,"
+      "'LineNames',{{'posX'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-2.35125','MaxYLimReal','3.96125'"
+      ",'YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','124.94125','LegendVisibility','off','XGrid',true,'YGrid',t"
+      "rue,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803"
+      "922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.160784313"
+      "72549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.05882352941"
+      "17647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefin"
+      "edChannelNames',{{}},'NumLines',1,'LineNames',{{'posY'}},'ShowContent',true,'Placement',2)},'DisplayPropertyDefa"
+      "ults',struct('YLabelReal','','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor'"
+      ",[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.074509803921568"
+      "6 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.2745098039"
+      "21569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650"
+      "980392156863]),'DisplayLayoutDimensions',[2 1]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop'"
+      ",false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Version',"
+      "'2018a','Position',[311 207 818 443],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      S-Function
+      Name		      "S-Function"
+      SID		      "96"
+      Ports		      [1, 1]
+      Position		      [-585, 606, -345, 674]
+      ZOrder		      12
+      BlockMirror	      on
+      FunctionName	      "II3"
+      SFunctionDeploymentMode off
+      EnableBusSupport	      off
+      SFcnIsStateOwnerBlock   off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "SWA_MPC"
+      SID		      "206"
+      Ports		      [2]
+      Position		      [-50, 826, 0, 899]
+      ZOrder		      194
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData11'),extmgr.Configuration('Visuals','Time Domai"
+      "n',true,'SerializedDisplays',{struct('MinYLimReal','-0.15584','MaxYLimReal','0.20366','YLabelReal','','MinYLimMa"
+      "g','0.00000','MaxYLimMag','0.20366','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Axes"
+      "Color',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666"
+      "66666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313"
+      "72549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686"
+      " 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on','Color',[1 1 0.066666"
+      "6666666667],'LineStyle','none','LineWidth',0.75,'Marker','o'),struct('Visible','off','Color',[0.0745098039215686"
+      " 0.623529411764706 1],'LineStyle','-','LineWidth',0.75,'Marker','none')}},'UserDefinedChannelNames',{{}},'NumLin"
+      "es',2,'LineNames',{{'fwa_MPC','Channel 2'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct("
+      "'MinYLimReal','-0.15584','MaxYLimReal','0.20366','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.20366','"
+      "LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686"
+      "274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.6235"
+      "29411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.7176"
+      "47058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<Signal"
+      "Label>'),'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'PreviousAutoscale','XY',"
+      "'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Version','2018a','Measurements',struct('tr"
+      "aceselector',struct('Line',1),'signalstats',[]))),'Version','2018a','Position',[705 174 1029 214],'VisibleAtMode"
+      "lOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "T_COST_MPC"
+      SID		      "200"
+      Ports		      [1]
+      Position		      [-50, 173, -20, 207]
+      ZOrder		      186
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData7'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.01884','MaxYLimReal','0.16956','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.16956','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",1,'LineNames',{{'Computation time'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYL"
+      "imReal','-0.01884','MaxYLimReal','0.16956','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.16956','Legend"
+      "Visibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509"
+      "803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.41176470588"
+      "2353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549"
+      "019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration("
+      "'Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measur"
+      "ements',true,'Version','2018a')),'Version','2018a','Position',[801 29 702 579],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      SID		      "715"
+      Ports		      [1]
+      Position		      [30, 160, 120, 190]
+      ZOrder		      235
+      Commented		      "on"
+      VariableName	      "x_coordinate"
+      MaxDataPoints	      "inf"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      SID		      "115"
+      Ports		      [1]
+      Position		      [-530, 700, -470, 730]
+      ZOrder		      19
+      Commented		      "on"
+      VariableName	      "u"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Structure"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      "716"
+      Ports		      [1]
+      Position		      [30, 230, 120, 260]
+      ZOrder		      236
+      Commented		      "on"
+      VariableName	      "y_coordinate"
+      MaxDataPoints	      "inf"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      SID		      "717"
+      Ports		      [1]
+      Position		      [240, 510, 350, 550]
+      ZOrder		      241
+      VariableName	      "lateral_error_II"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Timeseries"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      SID		      "718"
+      Ports		      [1]
+      Position		      [250, 455, 340, 485]
+      ZOrder		      242
+      Commented		      "on"
+      VariableName	      "yaw_error_II"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Timeseries"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace5"
+      SID		      "721"
+      Ports		      [1]
+      Position		      [250, 585, 340, 615]
+      ZOrder		      251
+      Commented		      "on"
+      VariableName	      "lateral_II"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Timeseries"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      SID		      "722"
+      Ports		      [1]
+      Position		      [275, 870, 365, 900]
+      ZOrder		      252
+      Commented		      "on"
+      VariableName	      "yaw_II"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Timeseries"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace7"
+      SID		      "752"
+      Ports		      [1]
+      Position		      [885, 305, 975, 335]
+      ZOrder		      282
+      VariableName	      "Input_II"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Timeseries"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      UniformRandomNumber
+      Name		      "Uniform Random\nNumber"
+      SID		      "749"
+      Position		      [-515, 424, -485, 456]
+      ZOrder		      279
+      Minimum		      "0.4"
+      Maximum		      "0.8"
+      Seed		      "random_seeds"
+      SampleTime	      "0.1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Vy-ALPHA-YAWRATE_MPC"
+      SID		      "201"
+      Ports		      [3]
+      Position		      [275, 722, 340, 828]
+      ZOrder		      188
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData8'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.51735','MaxYLimReal','0.51505','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.51735','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",1,'LineNames',{{'vy'}},'ShowContent',true,'Placement',1),struct('MinYLimReal','-0.03709','MaxYLimReal','0.03709"
+      "','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.54292','LegendVisibility','On','XGrid',true,'YGrid',tru"
+      "e,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.68627450980392"
+      "2],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372"
+      "549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117"
+      "647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefined"
+      "ChannelNames',{{}},'NumLines',1,'LineNames',{{'BETA'}},'ShowContent',true,'Placement',2),struct('MinYLimReal','-"
+      "0.71973','MaxYLimReal','0.71798','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','0.54292','LegendVisibility"
+      "','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6"
+      "86274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 "
+      "0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.27"
+      "4509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePro"
+      "pertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'LineNames',{{'yawrate'}},'ShowContent',true,'Pla"
+      "cement',3)},'DisplayPropertyDefaults',struct('YLabelReal','','LegendVisibility','On','XGrid',true,'YGrid',true,'"
+      "PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],"
+      "'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667"
+      ";0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647"
+      " 1 1;1 0.0745098039215686 0.650980392156863]),'DisplayLayoutDimensions',[3 1],'DisplayContentCache',[]),extmgr.C"
+      "onfiguration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('T"
+      "ools','Measurements',true,'Version','2018a','Measurements',struct('traceselector',struct('Line',1),'signalstats'"
+      ",[]))),'Version','2018a','Position',[763 151 815 632],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "3"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "XY_MPC"
+      SID		      "202"
+      Ports		      [2]
+      Position		      [-55, 309, -10, 356]
+      ZOrder		      184
+      Commented		      "on"
+      LibraryVersion	      "1.441"
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      xmin		      "-10"
+      xmax		      "180"
+      ymin		      "-4"
+      ymax		      "4"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "alpf--Fyf"
+      SID		      "222"
+      Ports		      [2]
+      Position		      [-1050, 965, -1020, 1000]
+      ZOrder		      210
+      BlockMirror	      on
+      Commented		      "on"
+      LibraryVersion	      "1.441"
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      xmin		      "-0.15"
+      xmax		      "0.15"
+      ymin		      "-8000"
+      ymax		      "8000"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "alpr--Fyr"
+      SID		      "223"
+      Ports		      [2]
+      Position		      [-1050, 1080, -1020, 1115]
+      ZOrder		      211
+      BlockMirror	      on
+      Commented		      "on"
+      LibraryVersion	      "1.441"
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   on
+      xmin		      "-0.1"
+      xmax		      "0.1"
+      ymin		      "-6000"
+      ymax		      "6000"
+      st		      "-1"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "curvature"
+      SID		      "182"
+      Ports		      [5]
+      Position		      [-1050, 526, -1000, 634]
+      ZOrder		      85
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.04533','MaxYLimReal','0.04447','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.04533','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on','Color',[1 1 0.0666666"
+      "666666667],'LineStyle','-','LineWidth',0.75,'Marker','o'),struct('Visible','on'),struct('Visible','on'),struct('"
+      "Visible','on'),struct('Visible','on'),[],[],[],[],struct('Color',[1 0.411764705882353 0.16078431372549],'LineSty"
+      "le','-','LineWidth',0.75,'Marker','s','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines',5,'LineNames',"
+      "{{'Demux4/1','Demux4/2','Demux4/3','Demux4/4','Demux4/5'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDe"
+      "faults',struct('MinYLimReal','-0.04533','MaxYLimReal','0.04447','YLabelReal','','MinYLimMag','0.00000','MaxYLimM"
+      "ag','0.04533','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTi"
+      "ckColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.07450980"
+      "39215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.07450980"
+      "39215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863],'T"
+      "itle','%<SignalLabel>'),'DisplayContentCache',[]),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtSto"
+      "p',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Version"
+      "','2018a','Position',[568 -337 1668 932],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "5"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "fwa_I&I\n"
+      SID		      "740"
+      Ports		      [2]
+      Position		      [945, 376, 975, 409]
+      ZOrder		      267
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.20694','MaxYLimReal','0.20934','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','0.20934','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','off"
+      "')}},'UserDefinedChannelNames',{{}},'NumLines',2,'LineNames',{{'Add','<fwa_MPC>'}},'ShowContent',true,'Placement"
+      "',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.20694','MaxYLimReal','0.20934','YLabelReal','','MinYLim"
+      "Mag','0.00000','MaxYLimMag','0.20934','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'Ax"
+      "esColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098"
+      "039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.27"
+      "4509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.07450980392156"
+      "86 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscal"
+      "e','XY'),extmgr.Configuration('Tools','Measurements',true,'Version','2018a')),'Version','2018a','Position',[922 "
+      "489 646 395],'VisibleAtModelOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "lateral_tracking_MPC"
+      SID		      "704"
+      Ports		      [2]
+      Position		      [-50, 246, -20, 279]
+      ZOrder		      212
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-2.29201','MaxYLimReal','4.02808','YLabelReal','','MinYLimMag"
+      "','0.00000','MaxYLimMag','4.02808','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesC"
+      "olor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.066666"
+      "6666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.83137"
+      "2549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 "
+      "0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Visible','on'),struct('Visible','on'"
+      ")}},'UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPr"
+      "opertyDefaults',struct('MinYLimReal','-2.29201','MaxYLimReal','4.02808','YLabelReal','','MinYLimMag','0.00000','"
+      "MaxYLimMag','4.02808','LegendVisibility','On','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0]"
+      ",'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.6235"
+      "29411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;"
+      "0.392156862745098 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.65098039215"
+      "6863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr."
+      "Configuration('Tools','Measurements',true,'Version','2018a')),'Version','2018a','Position',[961 473 715 376],'Vi"
+      "sibleAtModelOpen','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "solution_MPC\n"
+      SID		      "214"
+      Ports		      [1]
+      Position		      [-760, 599, -720, 641]
+      ZOrder		      202
+      BlockMirror	      on
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-0.625','MaxYLimReal','5.625','YLabelReal','','MinYLimMag','0"
+      ".00000','MaxYLimMag','5.625','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor'"
+      ",[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.06666666666"
+      "66667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.8313725490"
+      "19608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650"
+      "980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',1,'L"
+      "ineNames',{{'Demux/5'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-0.62"
+      "5','MaxYLimReal','5.625','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','5.625','LegendVisibility','off','X"
+      "Grid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.6862745098"
+      "03922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.160784313725"
+      "49;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039"
+      "215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navig"
+      "ation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('Tools','Measurements',true,'Versi"
+      "on','2018a')),'Version','2018a','Position',[877 165 440 344])"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "steer_wheel_angle_MPC"
+      SID		      "173"
+      Ports		      [2]
+      Position		      [-390, 200, -360, 240]
+      ZOrder		      80
+      Commented		      "on"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','ScopeData1'),extmgr.Configuration('Visuals','Time Domain"
+      "',true,'SerializedDisplays',{struct('MinYLimReal','-259.62939','MaxYLimReal','266.05842','YLabelReal','','MinYLi"
+      "mMag',' 0.00000','MaxYLimMag','266.05842','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',fals"
+      "e,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 "
+      "0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098"
+      " 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.074509803"
+      "9215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{struct('Color',[1 1 0.06666666666666"
+      "67],'LineStyle','none','LineWidth',0.75,'Marker','o','Visible','on')}},'UserDefinedChannelNames',{{}},'NumLines'"
+      ",2,'LineNames',{{'Steering Angle','Gain6'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct("
+      "'MinYLimReal','-259.62939','MaxYLimReal','266.05842','YLabelReal','','MinYLimMag',' 0.00000','MaxYLimMag','266.0"
+      "5842','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor"
+      "',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1"
+      " 0.411764705882353 0.16078431372549;1 1 0.0666666666666667;0.717647058823529 0.274509803921569 1;0.3921568627450"
+      "98 0.831372549019608 0.0745098039215686;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr."
+      "Configuration('Tools','Plot Navigation',true,'OnceAtStop',false,'PreviousAutoscale','XY'),extmgr.Configuration('"
+      "Tools','Measurements',true,'Version','2018a')),'Version','2018a','Position',[987 117 671 360],'VisibleAtModelOpe"
+      "n','on')"
+      NumInputPorts	      "2"
+      Floating		      off
+    }
+    Line {
+      ZOrder		      116
+      SrcBlock		      "CarSim S-Function"
+      SrcPort		      1
+      Points		      [37, 0; 0, 200]
+      DstBlock		      "S-Function"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      130
+      SrcBlock		      "S-Function"
+      SrcPort		      1
+      Points		      [-36, 0]
+      Branch {
+	ZOrder			1929
+	Points			[0, -60]
+	DstBlock		"Demux"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1460
+	Points			[0, 75]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      225
+      SrcBlock		      "Demux"
+      SrcPort		      2
+      Points		      [-62, 0; 0, -214; 456, 0; 0, 454]
+      DstBlock		      "Demux1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      418
+      SrcBlock		      "Demux2"
+      SrcPort		      1
+      DstBlock		      "Error-MPC"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      419
+      SrcBlock		      "Demux2"
+      SrcPort		      2
+      Points		      [-30, 0]
+      Branch {
+	ZOrder			1823
+	DstBlock		"Goto1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1822
+	DstBlock		"Error-MPC"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      420
+      SrcBlock		      "Demux2"
+      SrcPort		      3
+      DstBlock		      "Error-MPC"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      421
+      SrcBlock		      "Demux2"
+      SrcPort		      4
+      DstBlock		      "Error-MPC"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      520
+      SrcBlock		      "Demux"
+      SrcPort		      3
+      DstBlock		      "Demux2"
+      DstPort		      1
+    }
+    Line {
+      Name		      "PSI_Road"
+      ZOrder		      690
+      Labels		      [2, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      6
+      Points		      [99, 0; 0, -55]
+      DstBlock		      "PSI_devation_MPC"
+      DstPort		      2
+    }
+    Line {
+      Name		      "yawrate"
+      ZOrder		      510
+      Labels		      [1, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      14
+      Points		      [358, 0]
+      Branch {
+	ZOrder			1828
+	Points			[44, 0]
+	Branch {
+	  ZOrder		  1657
+	  Points		  [77, 0]
+	  Branch {
+	    ZOrder		    1236
+	    DstBlock		    "Vy-ALPHA-YAWRATE_MPC"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    1237
+	    Points		    [0, 75]
+	    DstBlock		    "To Workspace6"
+	    DstPort		    1
+	  }
+	}
+	Branch {
+	  ZOrder		  1581
+	  Points		  [0, -130]
+	  DstBlock		  "B_Y_MPC"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	ZOrder			1827
+	Points			[0, 115]
+	DstBlock		"Goto3"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "POS_PSI"
+      ZOrder		      497
+      Labels		      [1, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      4
+      DstBlock		      "PSI_devation_MPC"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Y_ZMP"
+      ZOrder		      507
+      Labels		      [1, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      9
+      Points		      [85, 0; 0, 70]
+      DstBlock		      "MPC_DLC_cost"
+      DstPort		      1
+    }
+    Line {
+      Name		      "vy"
+      ZOrder		      511
+      Labels		      [1, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      12
+      Points		      [322, 0]
+      Branch {
+	ZOrder			1654
+	DstBlock		"Vy-ALPHA-YAWRATE_MPC"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1235
+	Points			[0, -140]
+	DstBlock		"To Workspace5"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "BETA"
+      ZOrder		      514
+      Labels		      [1, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      13
+      Points		      [358, 0]
+      Branch {
+	ZOrder			1656
+	Points			[22, 0]
+	Branch {
+	  ZOrder		  1825
+	  DstBlock		  "Goto2"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  1824
+	  DstBlock		  "Vy-ALPHA-YAWRATE_MPC"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	ZOrder			1553
+	Points			[0, -120]
+	DstBlock		"B_Y_MPC"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "fwa_MPC"
+      ZOrder		      518
+      SrcBlock		      "Demux1"
+      SrcPort		      15
+      Points		      [60, 0]
+      Branch {
+	ZOrder			1830
+	DstBlock		"Goto4"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1829
+	Labels			[1, 1]
+	DstBlock		"SWA_MPC"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      1459
+      SrcBlock		      "Demux"
+      SrcPort		      5
+      DstBlock		      "solution_MPC\n"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      528
+      SrcBlock		      "Demux4"
+      SrcPort		      2
+      DstBlock		      "curvature"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      529
+      SrcBlock		      "Demux4"
+      SrcPort		      3
+      DstBlock		      "curvature"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      530
+      SrcBlock		      "Demux4"
+      SrcPort		      4
+      DstBlock		      "curvature"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      1458
+      SrcBlock		      "Demux4"
+      SrcPort		      5
+      DstBlock		      "curvature"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      1451
+      SrcBlock		      "Demux"
+      SrcPort		      6
+      DstBlock		      "Curvature To Ey_dot"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1450
+      SrcBlock		      "Demux"
+      SrcPort		      7
+      DstBlock		      "Curvature To EPSI_dot"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1449
+      SrcBlock		      "Demux"
+      SrcPort		      8
+      Points		      [-9, 0; 0, 85]
+      DstBlock		      "Demux7"
+      DstPort		      1
+    }
+    Line {
+      Name		      "CafHar"
+      ZOrder		      746
+      Labels		      [2, 1]
+      SrcBlock		      "Demux7"
+      SrcPort		      1
+      Points		      [-81, 0; 0, 25]
+      DstBlock		      "CafHat_MPC"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Carhat"
+      ZOrder		      747
+      Labels		      [1, 1]
+      SrcBlock		      "Demux7"
+      SrcPort		      2
+      DstBlock		      "CafHat_MPC"
+      DstPort		      2
+    }
+    Line {
+      Name		      "Fyf"
+      ZOrder		      748
+      Labels		      [-1, 0]
+      SrcBlock		      "Demux7"
+      SrcPort		      3
+      Points		      [-175, 0]
+      Branch {
+	ZOrder			832
+	DstBlock		"Fy"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			819
+	Points			[0, 65]
+	DstBlock		"alpf--Fyf"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "Fyr"
+      ZOrder		      749
+      SrcBlock		      "Demux7"
+      SrcPort		      4
+      Points		      [-49, 0]
+      Branch {
+	ZOrder			1727
+	Points			[0, 140]
+	DstBlock		"alpr--Fyr"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			1725
+	Labels			[2, 1]
+	Points			[0, -25]
+	DstBlock		"Fy"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "Alpf"
+      ZOrder		      750
+      Labels		      [1, 1]
+      SrcBlock		      "Demux7"
+      SrcPort		      5
+      Points		      [-76, 0]
+      Branch {
+	ZOrder			1728
+	Points			[0, 25]
+	DstBlock		"Alpha_MPC"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1726
+	Points			[0, -30]
+	DstBlock		"alpf--Fyf"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Alpr"
+      ZOrder		      751
+      Labels		      [1, 1]
+      SrcBlock		      "Demux7"
+      SrcPort		      6
+      Points		      [-142, 0]
+      Branch {
+	ZOrder			1724
+	Points			[0, 45]
+	DstBlock		"alpr--Fyr"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			820
+	DstBlock		"Alpha_MPC"
+	DstPort			2
+      }
+    }
+    Line {
+      Name		      "Refer_Yr"
+      ZOrder		      498
+      Labels		      [1, 1; 2, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      5
+      Points		      [25, 0; 0, -240]
+      DstBlock		      "lateral_tracking_MPC"
+      DstPort		      1
+    }
+    Line {
+      Name		      "posY"
+      ZOrder		      495
+      Labels		      [1, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      3
+      Points		      [91, 0]
+      Branch {
+	ZOrder			1650
+	Points			[32, 0]
+	Branch {
+	  ZOrder		  1580
+	  DstBlock		  "Pos_X_Y_MPC"
+	  DstPort		  2
+	}
+	Branch {
+	  ZOrder		  849
+	  Points		  [0, -155]
+	  DstBlock		  "lateral_tracking_MPC"
+	  DstPort		  2
+	}
+      }
+      Branch {
+	ZOrder			502
+	Points			[0, -80]
+	Branch {
+	  ZOrder		  1652
+	  DstBlock		  "XY_MPC"
+	  DstPort		  2
+	}
+	Branch {
+	  ZOrder		  1167
+	  Points		  [0, -105; 165, 0; 0, 5]
+	  DstBlock		  "To Workspace2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Name		      "Computation time"
+      ZOrder		      493
+      Labels		      [0, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      1
+      Points		      [10, 0; 0, -165]
+      DstBlock		      "T_COST_MPC"
+      DstPort		      1
+    }
+    Line {
+      Name		      "posX"
+      ZOrder		      491
+      SrcBlock		      "Demux1"
+      SrcPort		      2
+      Points		      [70, 0]
+      Branch {
+	ZOrder			1649
+	Labels			[0, 0]
+	Points			[39, 0; 0, 20]
+	DstBlock		"Pos_X_Y_MPC"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			469
+	Points			[0, -70]
+	Branch {
+	  ZOrder		  1651
+	  DstBlock		  "XY_MPC"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  1162
+	  Points		  [0, -90; 180, 0; 0, -55]
+	  DstBlock		  "To Workspace"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      Name		      "Epsi"
+      ZOrder		      505
+      Labels		      [1, 1]
+      SrcBlock		      "Demux1"
+      SrcPort		      7
+      Points		      [170, 0; 0, -15]
+      Branch {
+	ZOrder			1201
+	Points			[0, -40; 194, 0; 0, -40]
+	DstBlock		"To Workspace4"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1200
+	DstBlock		"Epsi_MPC"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "Steering Angle"
+      ZOrder		      189
+      Labels		      [2, 1]
+      SrcBlock		      "Demux"
+      SrcPort		      1
+      Points		      [-9, 0; 0, -90]
+      DstBlock		      "steer_wheel_angle_MPC"
+      DstPort		      1
+    }
+    Line {
+      Name		      "Ey"
+      ZOrder		      506
+      Labels		      [1, 0]
+      SrcBlock		      "Demux1"
+      SrcPort		      8
+      Points		      [140, 0]
+      Branch {
+	ZOrder			1346
+	Labels			[1, 1]
+	Points			[152, 0; 0, -70; 118, 0]
+	Branch {
+	  ZOrder		  1818
+	  DstBlock		  "Goto"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  1817
+	  DstBlock		  "To Workspace3"
+	  DstPort		  1
+	}
+      }
+      Branch {
+	ZOrder			1198
+	Points			[0, 40]
+	DstBlock		"Ey_I&I"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      1456
+      SrcBlock		      "Demux"
+      SrcPort		      4
+      Points		      [-68, 0; 0, 40]
+      DstBlock		      "Demux4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1457
+      SrcBlock		      "Demux4"
+      SrcPort		      1
+      Points		      [-70, 0]
+      Branch {
+	ZOrder			1832
+	DstBlock		"Goto5"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1831
+	DstBlock		"curvature"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      1799
+      SrcBlock		      "From5"
+      SrcPort		      1
+      Points		      [23, 0; 0, 70]
+      DstBlock		      "Gain1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1800
+      SrcBlock		      "Gain4"
+      SrcPort		      1
+      Points		      [40, 0; 0, -5]
+      DstBlock		      "Add"
+      DstPort		      5
+    }
+    Line {
+      ZOrder		      1803
+      SrcBlock		      "From"
+      SrcPort		      1
+      Points		      [9, 0; 0, 65]
+      Branch {
+	ZOrder			1802
+	Points			[-39, 0; 0, 45]
+	DstBlock		"Integrator"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1801
+	DstBlock		"Gain"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      1804
+      SrcBlock		      "Integrator"
+      SrcPort		      1
+      DstBlock		      "Gain2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1805
+      SrcBlock		      "From2"
+      SrcPort		      1
+      DstBlock		      "Gain4"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1808
+      SrcBlock		      "Add"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	ZOrder			1807
+	Points			[0, -115]
+	DstBlock		"Goto6"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1806
+	Points			[95, 0]
+	Branch {
+	  ZOrder		  2047
+	  Points		  [0, -65]
+	  DstBlock		  "To Workspace7"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  2046
+	  DstBlock		  "fwa_I&I\n"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      ZOrder		      1809
+      SrcBlock		      "Gain"
+      SrcPort		      1
+      Points		      [73, 0; 0, 10]
+      DstBlock		      "Add"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      1810
+      SrcBlock		      "From4"
+      SrcPort		      1
+      Points		      [10, 0; 0, -35]
+      DstBlock		      "fwa_I&I\n"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      1811
+      SrcBlock		      "Gain3"
+      SrcPort		      1
+      DstBlock		      "Add"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      1812
+      SrcBlock		      "Gain1"
+      SrcPort		      1
+      DstBlock		      "Add"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1813
+      SrcBlock		      "From3"
+      SrcPort		      1
+      DstBlock		      "Gain5"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1814
+      SrcBlock		      "Gain5"
+      SrcPort		      1
+      Points		      [40, 0; 0, -10]
+      DstBlock		      "Add"
+      DstPort		      6
+    }
+    Line {
+      ZOrder		      1815
+      SrcBlock		      "From1"
+      SrcPort		      1
+      DstBlock		      "Gain3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1816
+      SrcBlock		      "Gain2"
+      SrcPort		      1
+      Points		      [63, 0; 0, 20]
+      DstBlock		      "Add"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      1833
+      SrcBlock		      "From6"
+      SrcPort		      1
+      DstBlock		      "Gain6"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      1834
+      SrcBlock		      "Gain6"
+      SrcPort		      1
+      Points		      [12, 0]
+      Branch {
+	ZOrder			1850
+	Points			[0, 20]
+	DstBlock		"Mux"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			1847
+	Points			[0, -130]
+	DstBlock		"steer_wheel_angle_MPC"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      1838
+      SrcBlock		      "Uniform Random\nNumber"
+      SrcPort		      1
+      Points		      [40, 0]
+      Branch {
+	ZOrder			1936
+	Points			[0, 15]
+	Branch {
+	  ZOrder		  1938
+	  Points		  [0, 15]
+	  Branch {
+	    ZOrder		    1940
+	    Points		    [0, 15]
+	    Branch {
+	      ZOrder		      1942
+	      DstBlock		      "Mux"
+	      DstPort		      9
+	    }
+	    Branch {
+	      ZOrder		      1941
+	      DstBlock		      "Mux"
+	      DstPort		      8
+	    }
+	  }
+	  Branch {
+	    ZOrder		    1939
+	    DstBlock		    "Mux"
+	    DstPort		    7
+	  }
+	}
+	Branch {
+	  ZOrder		  1937
+	  DstBlock		  "Mux"
+	  DstPort		  6
+	}
+      }
+      Branch {
+	ZOrder			1935
+	DstBlock		"Mux"
+	DstPort			5
+      }
+      Branch {
+	ZOrder			1934
+	Points			[0, -15]
+	Branch {
+	  ZOrder		  1932
+	  Points		  [0, -15]
+	  Branch {
+	    ZOrder		    1933
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    1842
+	    DstBlock		    "Mux"
+	    DstPort		    3
+	  }
+	}
+	Branch {
+	  ZOrder		  1840
+	  DstBlock		  "Mux"
+	  DstPort		  4
+	}
+      }
+    }
+    Line {
+      ZOrder		      1849
+      SrcBlock		      "Mux"
+      SrcPort		      1
+      DstBlock		      "CarSim S-Function"
+      DstPort		      1
+    }
+    Annotation {
+      SID		      "711"
+      Name		      "TUBE_MPC_ROLL_3"
+      Position		      [-515, 584, -416, 598]
+      InternalMargins	      [0, 0, 0, 0]
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      BackgroundColor	      "lightBlue"
+      ZOrder		      -1
+    }
+  }
+}
+MatData {
+  NumRecords		  1
+  DataRecord {
+    Tag			    DataTag0
+    Data		    "  %)30     .    T     8    (     @         %    \"     $    !     0         %  0 !@    $    ,    3F%M90"
+    "  5F%L=64       X   !     !@    @    $          4    (     0    L    !         !     +    <F%N9&]M7W-E960       X "
+    "   X    !@    @    &          4    (     0    $    !          D    (         \"3U($$"
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000014
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "Immersion_3"
+    created		    "29-May-2013 22:31:22"
+    isLibrary		    0
+    sfVersion		    80000014
+    firstTarget		    2
+  }
+  target {
+    id			    2
+    machine		    1
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    linkNode		    [1 0 0]
+  }
+}
