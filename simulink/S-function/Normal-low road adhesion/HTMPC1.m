@@ -103,8 +103,6 @@ ts  = [0.05 0];
     VehiclePara.CarHat = -77000;
     VehiclePara.CafHat = -82000;
 
-%     VehiclePara.CarHat = -77000;
-%     VehiclePara.CafHat = -70000;
    [Sl, Ql, Rdun,Rdul, Wshl, dun, dul] = func_CostWeightingRegulation_QuadSlacks_Yalmip(MPCParameters, CostWeights, Constraints);
     CostWeights.Ql = Ql;    % Weights on states
     CostWeights.Sl = Sl;    % Weight  on fwa
@@ -152,6 +150,7 @@ ts  = [0.05 0];
     B_e = StateSpaceModel.b_u;
     K = dlqr(A_e, B_e, Q_e, R_e);
     StateSpaceModel.K = K;
+    
     RMPC = Solver_HTMPC(MPCParameters, Constraints, CostWeights, obj);
     solution = 0;
     fwa_sol  = 0;
