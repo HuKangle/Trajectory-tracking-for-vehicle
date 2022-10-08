@@ -113,7 +113,7 @@ ts  = [0.05 0];
     CostWeights.Q_err  = dul;
     
     global StateSpaceModel
-    StateSpaceModel = Model_Tube_MPC_84(VehiclePara, MPCParameters, Vel, VehiclePara.CafHat, VehiclePara.CarHat, CostWeights);
+    StateSpaceModel = Model_Tube_MPC_724(VehiclePara, MPCParameters, Vel, VehiclePara.CafHat, VehiclePara.CarHat, CostWeights);
 %     obj = calculate_approx_mrpi(StateSpaceModel);
 %     obj.mrpi.q_r_inv
 %     obj.mrpi.a_alpha
